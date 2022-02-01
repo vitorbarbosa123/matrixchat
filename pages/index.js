@@ -62,7 +62,7 @@ export default function PaginaInicial() {
             as="form"
             onSubmit={function (infos) {
               infos.preventDefault()
-              routeamento.push('/chat')
+              routeamento.push(`/chat?username=${username}`)
             }}
             styleSheet={{
               display: "flex",
